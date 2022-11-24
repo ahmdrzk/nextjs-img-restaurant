@@ -1,0 +1,55 @@
+$color-primary: #ff7b00;
+$color-secondary: rgb(255, 25, 0);
+$color-dark: #104f55;
+
+$color-background: #fcefe2;
+$color-foreground: #ffffff;
+
+$color-text-primary: $color-dark;
+$color-text-secondary: #e5e7e6;
+
+$radius-sm: 0.25rem;
+$radius-lg: 1.5rem;
+
+$shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+$header-max-width: 70rem;
+$footer-max-width: 70rem;
+$section-max-width: 60rem;
+$section-padding-block: 2.5rem;
+$section-padding-inline: 1.5rem;
+
+@mixin section-content {
+  max-width: $section-max-width;
+  margin-inline: auto;
+  padding-block: $section-padding-block;
+  padding-inline: $section-padding-inline;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}

@@ -1,0 +1,22 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: change-color($color-foreground, $alpha: 0.7);
+  padding-block: 1rem;
+  padding-inline: 1.5rem;
+  color: $color-primary;
+  text-decoration: none;
+
+  > img {
+    width: 3.2rem;
+    margin-right: 0.5rem;
+  }
+
+  > span {
+    color: $color-secondary;
+    font-size: 1.8rem;
+    font-weight: 900;
+  }
+}

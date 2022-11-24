@@ -1,0 +1,40 @@
+.image-card {
+  position: relative;
+  max-width: 25rem;
+  height: 25rem;
+  overflow: hidden;
+  box-shadow: $shadow;
+  border-radius: $radius-sm;
+
+  img {
+    height: 25rem;
+  }
+
+  > * {
+    transition: opacity 2s ease, height 0.4s ease;
+  }
+
+  .image-card__curtain {
+    position: relative;
+    z-index: 2;
+    height: 25rem;
+    overflow: hidden;
+
+    img {
+      position: relative;
+    }
+  }
+
+  .image-card__orig-img {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+
+  &:hover {
+    .image-card__curtain {
+      opacity: 50%;
+      height: 0;
+    }
+  }
+}

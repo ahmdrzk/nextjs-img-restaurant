@@ -1,0 +1,79 @@
+.root {
+  background-color: $color-background;
+  color: $color-text-primary;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  max-width: $header-max-width;
+  margin-inline: auto;
+  border-bottom-left-radius: $radius-lg;
+  border-bottom-right-radius: $radius-lg;
+  box-shadow: $shadow;
+  background-color: $color-primary;
+}
+
+.header-content {
+  @include section-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 0;
+}
+
+section {
+  @include section-content;
+}
+
+.intro-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+
+  .section-text-content {
+    margin-top: 4rem;
+  }
+}
+
+.about-section {
+  > h2 {
+    margin-bottom: 2rem;
+    color: $color-secondary;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .about-section__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+
+  .section-text-content {
+    margin-top: 2rem;
+  }
+}
+
+.section-text-content {
+  flex: 1 1 17rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+
+  .button {
+    margin-top: 1rem;
+  }
+}
+
+footer {
+  @include section-content;
+  display: flex;
+  justify-content: center;
+  max-width: $footer-max-width;
+  margin-top: 2rem;
+  padding-block: 1rem;
+  background-color: $color-dark;
+  color: $color-text-secondary;
+  font-size: 80%;
+}

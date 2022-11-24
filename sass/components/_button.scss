@@ -1,0 +1,25 @@
+.button {
+  box-shadow: $shadow;
+  border: none;
+  border-radius: $radius-sm;
+  background-color: $color-primary;
+  cursor: pointer;
+  padding: 0.7rem 1.25rem;
+  color: $color-foreground;
+  text-transform: uppercase;
+  font-size: 80%;
+  font-weight: 700;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: lighten($color-primary, 15%);
+  }
+}
+
+.button-secondary {
+  background-color: $color-secondary;
+
+  &:hover {
+    background-color: lighten($color-secondary, 15%);
+  }
+}
